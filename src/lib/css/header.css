@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#header {height:100px;}
+#header .fix_header {position:fixed;top:0;left:0;right:0;height:100px;box-sizing:border-box;padding:40px 0;text-align:center;background-color:#f5f5f5;}
+#header .fix_header a {font-size:20px;display:inline-block;font-weight:bold;}
+
+#header .fix_header .right_area {position:absolute;top:0;right:0;}
+#header .fix_header .icon_area {padding:35px;}
+#header .fix_header .icon_area i {font-size:30px;}
+
+
+@media (max-width:768px) {
+	#header {height:55px;}
+	#header .fix_header {height:55px;padding:18px 0;}
+	#header .fix_header .icon_area {padding:17px;}
+	#header .fix_header .icon_area i {font-size:20px;}
+}
