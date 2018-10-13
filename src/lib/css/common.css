@@ -27,7 +27,7 @@ input.common_check:checked + label.common_check:before {content:"\f00c";font-fam
 .d_inb {display:inline-block;}
 
 .center {text-align:center;}
-
+.right {text-align:right;}
 .over {white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 
 /* 모바일 레이아웃 */
