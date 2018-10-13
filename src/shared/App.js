@@ -11,9 +11,9 @@ class App extends Component {
 			<div id="AppBurdle">
 				<Header />
 				<div id="container">
-					<Route exact path="/" component={Main} />
-					<Route path="/user" component={User} />
-					<Route path="/board" component={Board} />
+					<Route exact path="/" component={ Main } />
+					<Route path="/user" component={ User } />
+					<Route path="/board" component={ Board } />
 				</div>
 				<Footer />
 			</div>
