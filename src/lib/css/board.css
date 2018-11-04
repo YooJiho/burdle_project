@@ -1,6 +1,6 @@
 @charset "utf-8";
 
 .list_box {border:1px solid #999;border-width:1px 0;}
-.list_table {display:table;table-layout:fixed;}
+.list_table {display:table;table-layout:fixed;width:100%;}
 .list_table_cell {display:table-cell;vertical-align:middle;height:40px;padding:5px;}
-.list_table_cell.contents_date {width:100px;}
+.list_table_cell.contents_date {width:100px;text-align:center;}

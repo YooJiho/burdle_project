@@ -7,16 +7,18 @@ class Header extends Component {
 		
 		return (
 			<header id="header">
-				<FixHeader />
+				<HeaderTop />
+				<HeaderSearch />
+				<HeaderNavigator />
 			</header>
 		)
 	}
 }
 
-function FixHeader() {
+function HeaderTop() {
 	
 	return (
-		<div className="fix_header">
+		<div className="top_header">
 			<HeaderLeft />
 			<AppLogo />
 			<HeaderRight />
@@ -28,9 +30,7 @@ function AppLogo() {
 
 	return (
 		<h1 className="app_logo">
-			<Link to="/">
-				Burdle
-			</Link>
+			<Link to="/">Burdle</Link>
 		</h1>
 	)
 
@@ -49,5 +49,37 @@ function HeaderRight() {
 		</div>
 	)
 }
+
+function HeaderSearch() {
+	return (
+		<div className="top_search">
+			<div className="common_input_box">
+				<input type="text" name="search_item" className="common_text" />
+				<button type="submit" className="common_btn transparent">
+					<i className="fas fa-search"></i>
+				</button>
+			</div>
+		</div>
+	)
+}
+
+function HeaderNavigator() {
+	return (
+		<div className="top_navigator">
+			<ul>
+				<li>
+					<Link to="" className="anchor_menu on">Menu1</Link>
+				</li>
+				<li>
+					<Link to="" className="anchor_menu">Menu1</Link>
+				</li>
+				<li>
+					<Link to="" className="anchor_menu">Menu1</Link>
+				</li>
+			</ul>
+		</div>
+	)
+}
+
 
 export default Header;

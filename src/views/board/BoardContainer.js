@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import { BoardView, BoardList } from 'views';
 
-class UserContainer extends Component {
+class BoardContainer extends Component {
 	render() {
 		return (
 			<div>
@@ -14,4 +14,4 @@ class UserContainer extends Component {
 	}
 }
 
-export default UserContainer;
+export default BoardContainer;

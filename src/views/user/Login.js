@@ -19,9 +19,10 @@ class Login extends Component {
 	}
 
 	onClickButton(e){
-		request.post('http://192.168.0.6:8080/create')
+
+		request.post('http://106.254.149.216:8090/login')
 		.accept('application/json')
-		.send( {userId : this.state.email, password : this.state.password})
+		.send({userId : this.state.email, password:this.state.password})
 		.end((err, res) => {
 			this.loadedJSON(err, res)
 		})
